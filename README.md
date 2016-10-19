@@ -8,6 +8,7 @@ Camera interface for Android Telegram Challenge 2016
 Демонстрация работы
 -------------------
 
-<iframe src="https://vk.com/video_ext.php?oid=18647651&id=456239026&hash=b5449e7fe15919fd&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+Демонстрация работы на видео
+[https://vk.com/video18647651_456239026](https://vk.com/video18647651_456239026)
 
 
