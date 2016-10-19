@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <!--<solid android:color="#0000FF"/>-->
+            <size android:height="@dimen/cam_mode_circle_diameter" android:width="@dimen/cam_mode_width"/>
+        </shape>
+    </item>
+</selector>

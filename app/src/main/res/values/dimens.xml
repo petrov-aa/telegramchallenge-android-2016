@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="camera_controls_background_height">100dp</dimen>
+
+    <!-- Main camera button dimensions -->
+    <dimen name="cam_but_imagebuttonsize">100dp</dimen>
+    <dimen name="cam_but_outer_size">68dp</dimen>
+    <dimen name="cam_but_outer_widewidth">85dp</dimen>
+    <dimen name="cam_but_outer_borderradius">34dp</dimen>
+    <dimen name="cam_but_blue1_size">60dp</dimen>
+    <dimen name="cam_but_blue1_shuttersize">37dp</dimen>
+    <dimen name="cam_but_blue1_widewidth">77dp</dimen>
+    <dimen name="cam_but_blue1_borderradius">30dp</dimen>
+    <dimen name="cam_but_blue2_size">37dp</dimen>
+    <dimen name="cam_but_rec_default">0dp</dimen>
+    <dimen name="cam_but_rec_onvideomode">16dp</dimen>
+    <dimen name="cam_but_rec_onrecording">68dp</dimen>
+    <dimen name="cam_but_stop_default">0dp</dimen>
+    <dimen name="cam_but_stop_borderradius">5dp</dimen>
+    <dimen name="cam_but_stop_onrecording">28dp</dimen>
+    <dimen name="cam_but_default">0dp</dimen>
+
+
+    <!-- Camera Rear-Front Switcher -->
+    <dimen name="camera_switch_circle_diameter_outer">15dp</dimen>
+    <dimen name="camera_switch_circle_diameter_inner">10dp</dimen>
+
+
+    <!-- Camera Photo-Video-Mode Indicator -->
+    <dimen name="cam_mode_circle_diameter">8dp</dimen>
+    <dimen name="cam_mode_width">24dp</dimen>
+    <dimen name="cam_mode_marginbutton">10dp</dimen>
+
+
+    <!-- Camera Flash Switcher -->
+    <dimen name="cam_flash_but_width">40dp</dimen>
+    <dimen name="cam_flash_but_height">60dp</dimen>
+    <dimen name="cam_flash_auto_marginleft">0dp</dimen> <!-- 5dp works fine here -->
+    <dimen name="cam_flash_paddingtop">16dp</dimen>
+
+</resources>

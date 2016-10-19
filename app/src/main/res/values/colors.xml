@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#000000</color>
+    <color name="camera_controls_back">#25272a</color>
+    <color name="camera_controls_back_video">#000000</color>
+
+
+    <!-- Main camera button colors -->
+    <color name="camera_button_stroke">#FFFFFF</color>
+    <color name="camera_button_blue1">#3d96e3</color>
+    <color name="camera_button_blue2">#50a8f5</color>
+    <color name="camera_button_rec">#cd4747</color>
+
+
+    <!-- Camera Rear-Front Switcher -->
+    <color name="camera_switch_stroke">#FFFFFF</color>
+    <color name="camera_switch_fill_front">#FFFFFF</color>
+    <color name="camera_switch_fill_rear">#25282A</color>
+
+
+    <!-- Camera Photo-Video-Mode Indicator -->
+    <color name="camera_mode_active">#85FFFFFF</color>
+    <color name="camera_mode_inactive">#30FFFFFF</color>
+
+
+    <color name="camera_edit_button_text">#FFFFFF</color>
+    <color name="camera_edit_angle_text">#FFFFFF</color>
+    <color name="camera_edit_button_done">#70bef9</color>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.phystech.petrov_aa.telegramchallenge2016.CameraActivity">
+
+    <edu.phystech.petrov_aa.telegramchallenge2016.SurfaceView16_9
+        android:id="@+id/surface16_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <edu.phystech.petrov_aa.telegramchallenge2016.SurfaceView4_3
+        android:id="@+id/surface4_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Camera Mode Indicator -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera_mode_indicator_container"
+        android:layout_above="@+id/camera_controls_container2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/cam_mode_marginbutton">
+    </FrameLayout>
+
+    <!-- Camera, Decision -->
+    <FrameLayout
+        android:id="@+id/camera_controls_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/surface4_3">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/camera_controls_back"
+            android:background="@drawable/camera_back_totrans_transition">
+            </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:id="@+id/camera_controls_container">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/camera_switch_container"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/camera_switch_icon"
+                    android:layout_gravity="center"
+                    android:scaleType="matrix"
+                    android:src="@drawable/camswitch" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/camera_switch_stroke"
+                    android:layout_gravity="center"
+                    android:background="@drawable/camera_switch_circle" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/camera_switch_fill"
+                    android:layout_gravity="center"
+                    android:background="@drawable/camera_switch_circlefill" />
+
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="New ToggleButton"
+                    android:id="@+id/camera_switcher"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:textOn=""
+                    android:textOff=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:id="@+id/camera_button_container">
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Flash -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/camera_flash_container">
+
+        <ImageButton
+            android:layout_width="@dimen/cam_flash_but_width"
+            android:layout_height="@dimen/cam_flash_but_height"
+            android:id="@+id/camera_flash_auto"
+            android:src="@drawable/flash_auto"
+            android:onClick="flashClick"
+            android:background="@null"
+            android:layout_gravity="start"
+            android:layout_marginLeft="@dimen/cam_flash_auto_marginleft"
+            android:paddingTop="@dimen/cam_flash_paddingtop"
+            android:scaleType="matrix" />
+
+        <ImageButton
+            android:layout_width="@dimen/cam_flash_but_width"
+            android:layout_height="@dimen/cam_flash_but_height"
+            android:id="@+id/camera_flash_on"
+            android:src="@drawable/flash_on"
+            android:onClick="flashClick"
+            android:background="@null"
+            android:layout_gravity="start"
+            android:scaleType="matrix"
+            android:paddingTop="@dimen/cam_flash_paddingtop" />
+
+        <ImageButton
+            android:layout_width="@dimen/cam_flash_but_width"
+            android:layout_height="@dimen/cam_flash_but_height"
+            android:id="@+id/camera_flash_off"
+            android:src="@drawable/flash_off"
+            android:onClick="flashClick"
+            android:background="@null"
+            android:layout_gravity="start"
+            android:scaleType="matrix"
+            android:paddingTop="@dimen/cam_flash_paddingtop" />
+    </FrameLayout>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_time"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:background="@drawable/video_time_back"/>
+
+</RelativeLayout>
